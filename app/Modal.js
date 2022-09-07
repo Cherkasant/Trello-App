@@ -141,6 +141,22 @@ export class Modal {
       callback(e.target[0].value, e.target[1].value, id);
       this.removeAddTodo();
     });
+
+    newTodo.addEvent('keyup', (e) => {
+      if (e.code === 'Escape') {
+        this.removeAddTodo();
+      } else if (e.code === 'Enter') {
+        e.preventDefault();
+        const id = todo ? todo.id : Date.now();
+        callback(
+          e.target.parentNode[0].value,
+          e.target.parentNode[1].value,
+          id
+        );
+
+        this.removeAddTodo();
+      }
+    });
   }
 
   static removeAddTodo() {
