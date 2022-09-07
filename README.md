@@ -6,8 +6,7 @@
 
 ---
 
-**This page was published in repository trello_app**.
-**This is link for my app ==>[Check Trello](https://cherkasant.github.io/first__layout/ 'Click me!!').**
+**This is link for my app ==>[Trello](https://cherkasant.github.io/trello-app/ 'Click me!!').**
 
 ---
 
