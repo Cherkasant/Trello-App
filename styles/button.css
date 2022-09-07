@@ -5,18 +5,20 @@
   border: none;
   outline: none;
   color: var(--color-white);
-  transition: background 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
 }
 .btn:hover {
-  background: var(--color-coral);
+  /* background: var(--color-coral); */
+  opacity: 0.8;
 }
 .btn:active {
   transform: translateY(1px);
 }
 
 .first {
-  background-color: var(--color-header-todo);
+  background-color: var(--color-green);
 }
 .second {
-  background-color: var(--color-header-completed);
+  background-color: var(--color-coral);
 }
