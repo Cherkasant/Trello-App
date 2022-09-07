@@ -6,7 +6,7 @@
 
 ---
 
-**This is link for my app ==>[Trello](https://cherkasant.github.io/trello-app/ 'Click me!!').**
+**Link for my app ==>[Trello](https://cherkasant.github.io/trello-app/ 'Click me!!').**
 
 ---
 
