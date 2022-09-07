@@ -1,0 +1,22 @@
+.btn {
+  font-size: 1.2rem;
+  padding: 0.4em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  transition: background 0.3s ease-in-out;
+}
+.btn:hover {
+  background: var(--color-coral);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+
+.first {
+  background-color: var(--color-header-todo);
+}
+.second {
+  background-color: var(--color-header-completed);
+}

@@ -1,0 +1,16 @@
+:root {
+  --color-grey: #c6cbcd;
+  --color-coral: #ec7979;
+  --color-supergrey: #86878b;
+  --color-title: #f9f5eb;
+  --color-background: #fffde3;
+  --color-slowred: #e64848;
+  --color-white: #ffffff;
+  --color-pink: #ffc4c4;
+  --color-header-todo: #9ba4b4;
+  --color-header-prog: #394867;
+  --color-header-completed: #14274e;
+  --color-header: #f1f6f9;
+  --color-green: #3ec70b;
+  --color-black: #000000;
+}

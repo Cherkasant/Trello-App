@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap');
+
+@import url(/styles/basic.css);
+@import url(/styles/variables.css);
+@import url(/styles/header.css);
+@import url(/styles/todo.css);
+@import url(/styles/button.css);
+@import url(/styles/template.css);
+@import url(/styles/modals.css);
+@import url(/styles/loader.css);

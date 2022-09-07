@@ -1,0 +1,72 @@
+.todo_item {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-supergrey);
+  border-radius: 10px;
+  background-color: var(--color-header-todo);
+}
+.todo_item-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  gap: 1em;
+}
+
+.todo_item-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.todo_item-title {
+  font-weight: bold;
+}
+
+.todo_item-block {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+.todo_button-inprogress {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  outline: none;
+  border: 1px solid var(--color-supergrey);
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.todo_button-edit,
+.todo_button-delete {
+  background: var(--color-white);
+  border-radius: 5px;
+  border: 1px solid var(--color-supergrey);
+  cursor: pointer;
+
+  /* text-transform: uppercase; */
+  transition: background-color 0.3s ease-in-out;
+}
+.todo_button-edit {
+  margin-left: auto;
+}
+.todo_item-time,
+.done {
+  margin-left: auto;
+}
+
+.todo_button-edit:hover,
+.todo_button-delete:hover,
+.todo_button-inprogress:hover {
+  background-color: var(--color-coral);
+}
+
+.progress {
+  background-color: var(--color-header);
+}
+.complete {
+  background-color: var(--color-pink);
+}

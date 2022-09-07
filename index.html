@@ -4,7 +4,120 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="/img/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="/app/index.js" type="module"></script>
+    <title>Trello App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="root">
+      <header>
+        <div class="header">
+          <h1 class="header_title">Trello</h1>
+          <p class="header_clock" data-header-clock></p>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="todos">
+            <section class="todo">
+              <div class="todo_header">
+                <div class="todo_header-title">TODO:</div>
+                <div class="todo_header-count" data-todo-count>1</div>
+              </div>
+              <div class="todo_description" data-todo-description></div>
+
+              <button class="btn first" data-button-add>ADD</button>
+            </section>
+
+            <section class="todo">
+              <div class="todo_header inprogress">
+                <div class="todo_header-title">IN PROGRESS:</div>
+                <div class="todo_header-count" data-todo-count-inprogress>
+                  1
+                </div>
+              </div>
+              <div
+                class="todo_description"
+                data-todo-description-inprogress
+              ></div>
+            </section>
+
+            <section class="todo">
+              <div class="todo_header completed">
+                <div class="todo_header-title">DONE:</div>
+                <div class="todo_header-count" data-todo-count-done>1</div>
+              </div>
+              <div class="todo_description" data-todo-description-done></div>
+              <button class="btn second" data-button-removeall>
+                RemoveAll
+              </button>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <template data-todo-item-template>
+      <div class="todo_item" draggable="true">
+        <div class="todo_item-buttons">
+          <span class="todo_item-title" data-todo-title>Title</span>
+          <button class="todo_button-edit" data-button-edit>Edit</button>
+          <button class="todo_button-delete" data-button-remove>
+            &#10006;
+          </button>
+        </div>
+        <div class="todo_item-content">
+          <span class="todo_item-description" data-todo-desc>Desc</span>
+          <button class="todo_button-inprogress" data-button-move>&#62;</button>
+        </div>
+
+        <div class="todo_item-block">
+          <span class="todo_item-user" data-todo-user>User</span>
+          <span class="todo_item-time" data-todo-time>time</span>
+        </div>
+      </div>
+    </template>
+
+    <template data-todo-item-template-inprogress>
+      <div class="todo_item progress" draggable="true">
+        <div class="todo_item-buttons">
+          <span class="todo_item-title" data-todo-title>Title</span>
+          <button class="todo_button-edit" data-button-back>back</button>
+          <button class="todo_button-delete" data-button-remove>
+            &#10006;
+          </button>
+        </div>
+        <div class="todo_item-content">
+          <span class="todo_item-description" data-todo-desc>Desc</span>
+          <button class="todo_button-inprogress" data-button-move>&#62;</button>
+        </div>
+
+        <div class="todo_item-block">
+          <span class="todo_item-user" data-todo-user>User</span>
+          <span class="todo_item-time" data-todo-time>time</span>
+        </div>
+      </div>
+    </template>
+
+    <template data-todo-item-template-completed>
+      <div class="todo_item complete" draggable="true">
+        <div class="todo_item-buttons">
+          <span class="todo_item-title" data-todo-title>Title</span>
+
+          <button class="todo_button-delete done" data-button-remove>
+            &#10006;
+          </button>
+        </div>
+        <div class="todo_item-content">
+          <span class="todo_item-description" data-todo-desc>Desc</span>
+        </div>
+
+        <div class="todo_item-block">
+          <span class="todo_item-user" data-todo-user>User</span>
+          <span class="todo_item-time" data-todo-time>time</span>
+        </div>
+      </div>
+    </template>
+  </body>
 </html>
