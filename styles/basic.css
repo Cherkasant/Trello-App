@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: var(--color-white);
+  background: var(--color-ultrafiolet);
 }
 .container {
   max-width: 1200px;

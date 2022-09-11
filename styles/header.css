@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background: var(--color-header-todo);
+  background: #bface0;
 }
 
 .header_clock {

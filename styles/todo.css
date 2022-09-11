@@ -9,7 +9,7 @@
 .todo {
   width: 350px;
   display: flex;
-  /* justify-content: space-between; */
+  background-color: var(--color-white);
   flex-direction: column;
   border: 1px solid var(--color-grey);
   border-radius: 10px;

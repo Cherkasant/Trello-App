@@ -7,10 +7,11 @@
   --color-slowred: #e64848;
   --color-white: #ffffff;
   --color-pink: #ffc4c4;
-  --color-header-todo: #9ba4b4;
-  --color-header-prog: #394867;
-  --color-header-completed: #14274e;
+  --color-header-todo: #bface0;
+  --color-header-prog: #a084ca;
+  --color-header-completed: #645caa;
   --color-header: #f1f6f9;
   --color-green: #2b7a0b;
   --color-black: #000000;
+  --color-ultrafiolet: #ebc7e8;
 }
