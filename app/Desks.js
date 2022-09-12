@@ -1,6 +1,6 @@
 import { API } from './API.js';
 import { User } from './User.js';
-import { $ } from './DOM.js';
+
 import {
   createContentDesk,
   createContentDeskInprogress,
@@ -10,7 +10,6 @@ import {
   userName,
   avatar,
 } from './elements.js';
-import { getDate } from './utils/date.js';
 import { Logic } from './Logic.js';
 import { ERROR_FETCHING, ERROR_WHILE_DELETE } from './errorMessages.js';
 

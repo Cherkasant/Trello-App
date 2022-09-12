@@ -9,7 +9,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 .btn:hover {
-  /* background: var(--color-coral); */
   opacity: 0.8;
 }
 .btn:active {

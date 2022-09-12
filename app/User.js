@@ -1,4 +1,3 @@
-import { API } from './API.js';
 import { Modal } from './Modal.js';
 
 export class User {
@@ -42,7 +41,6 @@ export class User {
       appendDesks();
     } catch (e) {
       Modal.addError(`${message}: ${e.message}`);
-      // console.error('fetcher()', e.message);
     }
   }
 }
