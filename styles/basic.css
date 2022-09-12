@@ -4,7 +4,8 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: var(--color-ultrafiolet);
+  background: linear-gradient(45deg, #9890e3, #b1f4cf);
+  background-attachment: fixed;
 }
 .container {
   max-width: 1200px;

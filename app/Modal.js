@@ -6,6 +6,7 @@ export class Modal {
   static #loader;
   static #warning;
   static #addTodo;
+  static #userSelect;
 
   static addLoader() {
     const loader = DOM.create('div', 'modal');
@@ -162,6 +163,39 @@ export class Modal {
   static removeAddTodo() {
     if (Modal.#addTodo) {
       Modal.#addTodo.remove();
+    }
+  }
+
+  static userSelect(desks) {
+    const list = DOM.create('div', 'modal');
+    const usersForm = DOM.create('form', 'modal_new-todo', 'user_form');
+    usersForm.insertHTML(
+      'afterbegin',
+      `<label for="select">Welcome!</label>
+      <select name="select" id="">
+      <option value="">--Please choose a User--</option>
+    <option value="1">Jim Aufderhar</option>
+    <option value="2">Ms. Rogelio Marks</option>
+    <option value="3">Melanie Trantow</option>
+    <option value="4">Allison Torp MD</option>
+  </select>`
+    );
+
+    usersForm.addEvent('change', (e) => {
+      const value = e.target.value.trim();
+      if (value) {
+        desks.render(value);
+        this.removeUserSelect();
+      }
+    });
+    Modal.#userSelect = list;
+    list.append(usersForm);
+    root.insertElement('afterend', list);
+  }
+
+  static removeUserSelect() {
+    if (Modal.#userSelect) {
+      Modal.#userSelect.remove();
     }
   }
 }

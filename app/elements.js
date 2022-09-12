@@ -18,6 +18,9 @@ const root = $('.root');
 const btnRemoveAll = $('[data-button-removeall]');
 const btnAddTodo = $('[data-button-add]');
 
+const userName = $('[data-header-username]');
+const avatar = $('[data-header-avatar]');
+
 export {
   clock,
   createDeskTemplate,
@@ -32,4 +35,6 @@ export {
   root,
   btnRemoveAll,
   btnAddTodo,
+  userName,
+  avatar,
 };

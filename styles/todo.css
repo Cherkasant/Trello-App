@@ -1,7 +1,7 @@
 .todos {
   padding: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 }

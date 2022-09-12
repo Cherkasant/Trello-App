@@ -38,6 +38,7 @@ export class User {
       const user = await callback();
       this.user = user;
       this.desks = user.desks;
+      this.#userId = user.id;
       appendDesks();
     } catch (e) {
       Modal.addError(`${message}: ${e.message}`);

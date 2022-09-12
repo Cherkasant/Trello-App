@@ -1,11 +1,12 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 20px;
-  background: #bface0;
+  background: var(--color-header-todo);
 }
 
 .header_clock {
+  margin-left: auto;
   width: 150px;
   height: 60px;
   border-radius: 10px;
@@ -23,4 +24,23 @@
   text-align: center;
   font-weight: bold;
   text-shadow: 3px 3px var(--color-supergrey);
+}
+
+.header_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header_username {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  color: var(--color-white);
+}
+.header_avatar {
+  padding: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }

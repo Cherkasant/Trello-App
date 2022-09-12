@@ -18,7 +18,7 @@ export class API {
     const response = await fetch(API.#route + id);
     if (response.ok) {
       const user = await response.json();
-      setTimeout(Modal.removeLoader, 1000);
+      setTimeout(Modal.removeLoader, 500);
       return user;
     } else {
       throw new Error(response.statusText);
